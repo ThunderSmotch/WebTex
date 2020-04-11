@@ -8,11 +8,17 @@ function loadTestFile(file){
 
 function convertWebTex2HTML(){
     var files = $('#file1').prop('files');
-    var convertedFiles = [];
+    var zip = new JSZip();
+
     for(i = 0; i < files.length; i++){
-        console.log(files[i]);
-        files[i].text().then(text => convertedFiles.push(parseWebtex(text)))
+        var convertedText = '';
+        files[i].text().then(text => convertedText=parseWebtex(text) )
+        zip.file(files[i].name, convertedText);
     }
 
-    console.log(convertedFiles);
+    //Download ZIP
+    zip.generateAsync({type:"blob"}).then(function(content) {
+        saveAs(content, "convertedFiles.zip");
+    });
+
 }
