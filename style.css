@@ -10,8 +10,6 @@ details[open] summary ~ * {
 
 summary {
     display: list-item !important;
-    counter-increment: list-item 0;
-    list-style: disclosure-closed inside;
 }
 
 details[open] ::-webkit-details-marker

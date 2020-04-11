@@ -25,7 +25,7 @@ The following Latex code:
 when converted to HTML will result in the following clickable element:
 <details>
 <summary>
-Title
+**Title**
 </summary>
 <div>
 \[E = mc^2\]
