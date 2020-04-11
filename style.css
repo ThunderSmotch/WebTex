@@ -13,3 +13,8 @@ summary {
     counter-increment: list-item 0;
     list-style: disclosure-closed inside;
 }
+
+details[open] ::-webkit-details-marker
+{
+    transform: rotate(90deg);
+}
