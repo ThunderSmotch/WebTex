@@ -11,6 +11,7 @@ function convertWebTex2HTML(){
 
     for(i = 0; i < files.length; i++){
         console.log(files[i]);
+        files[i].text().then(text => console.log(text))
     }
-    
+
 }
