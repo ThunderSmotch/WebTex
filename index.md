@@ -1,6 +1,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="./webtexParser.js"></script>
-<script src="./main.js"></script>
 <script src="./mathjaxConfig.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -24,8 +23,7 @@ The following Latex code:
 ```
 when converted to HTML will result in the following clickable element:
 <details>
-<summary>**Title**</summary>
-
+<summary>Title</summary>
 <div>
 \[E = mc^2\]
 </div>

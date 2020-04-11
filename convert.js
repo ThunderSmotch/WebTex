@@ -5,3 +5,7 @@ function loadTestFile(file){
         MathJax.typeset();
     });
 }
+
+function convertWebTex2HTML(){
+    console.log('Success');
+}
