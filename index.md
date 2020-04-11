@@ -11,7 +11,7 @@ This library/website provides a way to convert WebTex files to MathJax HTML read
 **What is WebTex?** 
 It's simply a Latex file with some extra custom commands that the parser converts into several custom HTML tags.
 
-[Click here](/convert) to upload and convert local files from WebTex to HTML and vice versa.
+[Click here](WebTex/convert) to upload and convert local files from WebTex to HTML and vice versa.
 
 ## Examples of custom tags:
 
@@ -24,9 +24,8 @@ The following Latex code:
 ```
 when converted to HTML will result in the following clickable element:
 <details>
-<summary>
-**Title**
-</summary>
+<summary>**Title**</summary>
+
 <div>
 \[E = mc^2\]
 </div>
