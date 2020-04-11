@@ -7,5 +7,9 @@ function loadTestFile(file){
 }
 
 function convertWebTex2HTML(){
-    console.log('Success');
+    var files = $('#file1').prop('files');
+
+    files.forEach(file => {
+        console.log(file);
+    });
 }
