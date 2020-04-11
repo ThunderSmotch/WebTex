@@ -11,10 +11,7 @@ function convertWebTex2HTML(){
     var zip = new JSZip();
 
     for(i = 0; i < files.length; i++){
-        var convertedText = '';
-        files[i].text().then(text => convertedText=parseWebtex(text) )
-        console.log(convertedText)
-        zip.file(files[i].name, convertedText);
+        files[i].text().then(text => zip.file(files[i].name, parseWebtex(text)))
     }
 
     //Download ZIP
