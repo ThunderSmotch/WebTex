@@ -7,8 +7,13 @@ function parseWebtex(data){
 }
 
 function replaceSections(data){
+    data = replaceCommand(data, 'chapter', 'h1');
     data = replaceCommand(data, 'section', 'h2');
     data = replaceCommand(data, 'subsection', 'h3');
+    data = replaceCommand(data, 'subsubsection', 'h4');
+    data = replaceCommand(data, 'paragraph', 'h5');
+    data = replaceCommand(data, 'subparagraph', 'h6');
+
     return data;
 }
 
@@ -27,10 +32,9 @@ function replaceSpoiler(data){
     return str;
 }
 
-
 //Replaces a simple \command{text} or \command*{text} with a <tag>text</tag>
 function replaceCommand(data, cmdName, tag){
-    var reg = new RegExp('\\\\' + cmdName + '\\*?{(.+)}', g);
+    var reg = new RegExp('\\\\' + cmdName + '\\*?{(.+)}', 'g');
 
     var str = data.replace(reg, 
         function (match, p1, p2){
