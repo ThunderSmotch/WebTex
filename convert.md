@@ -7,7 +7,7 @@
 # Convert WebTex to HTML
 
 <label for="file1">Select a file:</label>
-<input type="file" id="file1" name="file1"> 
+<input type="file" id="file1" name="file1" multiple> 
 
 <button onClick='convertWebTex2HTML();'>Convert and Download</button>
 

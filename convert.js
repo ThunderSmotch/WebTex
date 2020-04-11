@@ -13,6 +13,7 @@ function convertWebTex2HTML(){
     for(i = 0; i < files.length; i++){
         var convertedText = '';
         files[i].text().then(text => convertedText=parseWebtex(text) )
+        console.log(convertedText)
         zip.file(files[i].name, convertedText);
     }
 
