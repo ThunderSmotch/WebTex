@@ -37,8 +37,8 @@ function replaceCommand(data, cmdName, tag){
     var reg = new RegExp('\\\\' + cmdName + '\\*?{(.+)}', 'g');
 
     var str = data.replace(reg, 
-        function (match, p1, p2){
-            return `<${tag}>p1</${tag}>`;
+        function (match, p1){
+            return `<${tag}>${p1}</${tag}>`;
         });
     return str;
 }
