@@ -25,7 +25,9 @@ Content
 ```
 when converted to HTML will result in the following element:
 <details>
-<summary>Title</summary>
+<summary>
+Title
+</summary>
 <div>
 Content
 </div>
