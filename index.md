@@ -2,7 +2,6 @@
 <script src="./webtexParser.js"></script>
 <script src="./main.js"></script>
 <script src="./mathjaxConfig.js"></script>
-<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>	
 <link rel="stylesheet" type="text/css" href="style.css">
 
 # ThunderSmotch's WebTex to HTML Parser
@@ -20,15 +19,18 @@ It's simply a Latex file with some extra custom commands that the parser convert
 The following Latex code:
 ```
 \begin{spoiler}[Title]
-Content
+\[E = mc^2\]
 \end{spoiler}
 ```
-when converted to HTML will result in the following element:
+when converted to HTML will result in the following clickable element:
 <details>
 <summary>
 Title
 </summary>
 <div>
-Content
+\[E = mc^2\]
 </div>
 </details>
+Which renders equations using the MathJax library.
+
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>	
