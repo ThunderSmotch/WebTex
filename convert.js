@@ -8,10 +8,11 @@ function loadTestFile(file){
 
 function convertWebTex2HTML(){
     var files = $('#file1').prop('files');
-
+    var convertedFiles = [];
     for(i = 0; i < files.length; i++){
         console.log(files[i]);
-        files[i].text().then(text => console.log(text))
+        files[i].text().then(text => convertedFiles.push(parseWebtex(text)))
     }
 
+    console.log(convertedFiles);
 }
