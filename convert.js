@@ -6,7 +6,7 @@ function loadTestFile(file){
     });
 }
 
-function convertWebTex2HTML(){
+async function convertWebTex2HTML(){
     var files = $('#file1').prop('files');
     var zip = new JSZip();
 
