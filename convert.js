@@ -9,7 +9,8 @@ function loadTestFile(file){
 function convertWebTex2HTML(){
     var files = $('#file1').prop('files');
 
-    files.forEach(file => {
-        console.log(file);
-    });
+    for(i = 0; i < files.length; i++){
+        console.log(files[i]);
+    }
+    
 }
