@@ -1,6 +1,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.3.0/jszip.min.js"></script>
+<script src="https://unpkg.com/common-tags@1.8.0/dist/common-tags.min.js"></script>
 <script src="./webtexParser.js"></script>
 <script src="./convert.js"></script>
 
@@ -31,7 +32,7 @@ Test
 </textarea> 
 </div>
 
-<button onClick='convertWebTex2HTMLTextArea();'>Convert and Download</button>
+<button onClick='convertWebTex2HTMLTextArea();'>Convert Text</button>
 
 # Convert WebTex files to HTML
 
