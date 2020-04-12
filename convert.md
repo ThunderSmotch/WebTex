@@ -6,6 +6,7 @@
 
 # Online Text Converter
 
+<div style='display:inline-block;'>
 <label for="textarea1">Input your text here:</label>
 <textarea id="textarea1" rows="20" cols="50">
 \section{Test File}
@@ -28,6 +29,7 @@ pppp
 
 <textarea id="textarea2" rows="20" cols="50" readonly>
 </textarea> 
+</div>
 
 <button onClick='convertWebTex2HTMLTextArea();'>Convert and Download</button>
 
