@@ -6,9 +6,9 @@
 
 # Online Text Converter
 
+<span>Input text below to see the changes:</span>
 <div style='display:inline-block;'>
-<label for="textarea1">Input your text here:</label>
-<textarea id="textarea1" rows="20" cols="50">
+<textarea style='float:left;' id="textarea1" rows="20" cols="35">
 \section{Test File}
 
 $$E = mc^3$$
@@ -27,7 +27,7 @@ pppp
 \end{spoiler}
 </textarea>
 
-<textarea id="textarea2" rows="20" cols="50" readonly>
+<textarea id="textarea2" style='float:left;' rows="20" cols="35" readonly>
 </textarea> 
 </div>
 
