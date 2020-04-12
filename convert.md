@@ -14,7 +14,7 @@
 $$E = mc^3$$
 
 
-\( ola \) 
+\( Hi \) 
 
 \subsection{Test Spoiler}
 
@@ -23,7 +23,7 @@ $$E = mc^3$$
 \end{spoiler}
 
 \begin{spoiler}[Test 2] 
-pppp
+Test
 \end{spoiler}
 </textarea>
 
