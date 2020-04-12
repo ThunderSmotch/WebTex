@@ -4,7 +4,34 @@
 <script src="./webtexParser.js"></script>
 <script src="./convert.js"></script>
 
-# Convert WebTex to HTML
+# Online Text Converter
+
+<label for="textarea1">Input your text here:</label>
+<textarea id="textarea1" rows="20" cols="50">
+\section{Test File}
+
+$$E = mc^3$$
+
+
+\( ola \) 
+
+\subsection{Test Spoiler}
+
+\begin{spoiler}[Test \( x^{2} \)]
+    \[ x^{3} \]  
+\end{spoiler}
+
+\begin{spoiler}[Test 2] 
+pppp
+\end{spoiler}
+</textarea>
+
+<textarea id="textarea2" rows="20" cols="50" readonly>
+</textarea> 
+
+<button onClick='convertWebTex2HTMLTextArea();'>Convert and Download</button>
+
+# Convert WebTex files to HTML
 
 <label for="file1">Select a file:</label>
 <input type="file" id="file1" name="file1" multiple> 

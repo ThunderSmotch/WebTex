@@ -20,3 +20,7 @@ async function convertWebTex2HTML(){
     });
 
 }
+
+function convertWebTex2HTMLTextArea(){
+    $('#textarea2')[0].value = parseWebtex($('#textarea1')[0].value); 
+}
