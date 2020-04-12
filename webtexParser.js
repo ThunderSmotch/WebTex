@@ -21,14 +21,12 @@ function replaceSections(data){
 function replaceSpoiler(data){
     var str = data.replace(/\\begin{spoiler}\[(.+)\][\s\r\n]+([\s\S]*?)\\end{spoiler}/g, 
         function (match, p1, p2){
-            return stripIndent`
-                <details>
-                <summary>${p1}</summary>
-                <div>
-                ${p2}
-                </div>
-                </details>
-                `;
+            return `<details>
+<summary>${p1}</summary>
+<div>
+${p2}
+</div>
+</details>`;
         }
     );
     return str;
